@@ -9,7 +9,7 @@ int getUserNumber() {
 }
 
 void doubleNumber(int x) {
-    std::cout << x << " Doubled = " << x*2 << "\n";
+    std::cout << x << " doubled = " << x*2 << "\n";
 }
 
 int main() {
