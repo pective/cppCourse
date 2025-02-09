@@ -1,16 +1,8 @@
 #include <iostream>
 
-int readNumber() {
-    std::cout << "Enter a number: ";
-    int x;
-    std::cin >> x;
+int readNumber();
 
-    return x;
-}
-
-void writeAnswer(int x) {
-    std::cout << "The answer is " << x << "\n";
-}
+void writeAnswer(int x);
 
 int main() {
     int x { readNumber() };
