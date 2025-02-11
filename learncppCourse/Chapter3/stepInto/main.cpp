@@ -8,6 +8,8 @@ void printValue(int value)
 int main()
 {
     printValue(5);
+    printValue(6);
+    printValue(7);
 
     return 0;
 }
