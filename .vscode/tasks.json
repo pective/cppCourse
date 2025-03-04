@@ -17,7 +17,7 @@
                 "-Wextra",
                 "-Wconversion",
                 "-Wsign-conversion",
-                "-std=c++20"
+                "-std=c++17"
             ],
             "options": {
                 "cwd": "${fileDirname}"
