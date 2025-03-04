@@ -1,36 +1,43 @@
 #include <iostream>
 
-int calc(int x, int y, char o) {
-    switch (o)
+double getNumber() {
+    double n;
+    std::cout << "Enter a decimal number: \n";
+    std::cin >> n;
+    return n;
+}
+char getSymbol() {
+    char s;
+    std::cout << "Enter Arithmetic operator: \n";
+    std::cin >> s;
+    return s;
+}
+void calculate(double n1, double n2, char s) {
+    switch (s)
     {
     case '+':
-        return x+y;
+        std::cout << n1 << " " << " + " << n2 << " = " << n1+n2 << "\n";
         break;
     case '-':
-        return x-y;
+        std::cout << n1 << " " << " - " << n2 << " = " << n1-n2 << "\n";
         break;
     case '*':
-        return x*y;
+        std::cout << n1 << " " << " * " << n2 << " = " << n1*n2 << "\n";
         break;
     case '/':
-        return x/y;
+        std::cout << n1 << " " << " / " << n2 << " = " << n1/n2 << "\n";
         break;
     default:
-        std::cout << "Enter a valid operand\n";
+        std::cout << "idk what went wrong tbh";
         break;
     }
-    return 0;
 }
 
+
 int main() {
-    int x,y;
-    char o;
-    std::cout << "Enter first number\n";
-    std::cin >> x;
-    std::cout << "Enter second number\n";
-    std::cin >> y;
-    std::cout << "+, -, *, /\n";
-    std::cin >> o;
-    
-    std::cout << x << " " << o << " " << y << " = " << calc(x,y,o) << "\n";
+    double x { getNumber() };
+    double y { getNumber() };
+    char s { getSymbol() };
+
+    calculate(x,y,s);
 }

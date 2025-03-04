@@ -11,7 +11,7 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-pedantic-errors",
-                "-Werror",
+                // "-Werror",
                 "-Wall",
                 "-Weffc++",
                 "-Wextra",
