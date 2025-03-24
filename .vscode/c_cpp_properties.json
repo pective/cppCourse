@@ -9,7 +9,7 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "linux-clang-x64",
-            "compilerPath": "/usr/bin/clang++"
+            "compilerPath": "/nix/store/qla374n3avx7nzaw2kvq6wj9y4agiw1l-clang-19.1.7/bin/clang++"
         }
     ],
     "version": 4
